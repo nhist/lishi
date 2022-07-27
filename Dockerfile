@@ -14,10 +14,11 @@ FROM node:12 AS dlauncher
 WORKDIR /work
 ADD go.mod /work
 RUN apt update && apt-get -y install git
-RUN cd /work && git clone https://github.com/streamingfast/dlauncher.git dlauncher &&\
-	grep -w github.com/streamingfast/dlauncher go.mod | sed 's/.*-\([a-f0-9]*$\)/\1/' |head -n 1 > dlauncher.hash &&\
+#grep -w github.com/streamingfast/dlauncher go.mod | sed 's/.*-\([a-f0-9]*$\)/\1/' |head -n 1 > dlauncher.hash &&\
+
+RUN cd /work && git clone https://github.com/nhist/dlauncher.git dlauncher &&\
     cd dlauncher &&\
-    git checkout "$(cat ../dlauncher.hash)" &&\
+    git checkout v3.0.0 &&\
     cd dashboard/client &&\
     yarn install && yarn build
 
