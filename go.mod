@@ -116,6 +116,14 @@ replace github.com/ShinyTrinkets/overseer => github.com/dfuse-io/overseer v0.2.1
 // The go-testing-interface version matches the Golang version to compile against, in this case, we want
 // compatibility with 1.14 which is our minimum version. So we enforce a strict version to v1.14.1 now.
 
-replace github.com/streamingfast/dauth => github.com/eosnationftw/dauth v0.0.0-20210818092801-fb989ed88d76
+//replace github.com/streamingfast/dauth => github.com/eosnationftw/dauth v0.0.0-20210818092801-fb989ed88d76
 
 replace github.com/streamingfast/firehose => github.com/EOS-Nation/firehose v0.1.1-0.20210818200630-ccd1d285dbe5
+
+replace github.com/eoscanada/eos-go => github.com/nhist/zswchain-go v3.0.0
+replace github.com/eoscanada/eosc => github.com/nhist/eosc v3.0.0
+replace github.com/dfuse-io/eosws-go => github.com/nhist/eosws-go v3.0.0
+replace github.com/streamingfast/dgraphql => github.com/nhist/dgraphql v3.0.0
+replace github.com/streamingfast/dlauncher => github.com/nhist/dlauncher v3.0.0
+replace github.com/dfuse-io/eosio-boot => github.com/nhist/eosio-boot v3.0.0
+
