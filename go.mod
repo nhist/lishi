@@ -120,7 +120,7 @@ replace github.com/ShinyTrinkets/overseer => github.com/dfuse-io/overseer v0.2.1
 
 //replace github.com/streamingfast/firehose => github.com/EOS-Nation/firehose v0.1.1-0.20210818200630-ccd1d285dbe5
 replace github.com/streamingfast/firehose => github.com/nhist/firehose v0.31.0
-
+replace github.com/streamingfast/dstore => github.com/nhist/dstore v0.30.0
 replace github.com/eoscanada/eos-go => github.com/nhist/zswchain-go v0.30.0
 replace github.com/eoscanada/eosc => github.com/nhist/eosc v0.30.0
 replace github.com/dfuse-io/eosws-go => github.com/nhist/eosws-go v0.30.0
