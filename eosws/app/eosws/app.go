@@ -41,8 +41,6 @@ import (
 	"github.com/streamingfast/dauth/authenticator"
 	dauthMiddleware "github.com/streamingfast/dauth/authenticator/middleware"
 	_ "github.com/streamingfast/dauth/authenticator/null" // auth plugin
-	_ "github.com/streamingfast/dauth/authenticator/redis"
-	_ "github.com/streamingfast/dauth/metering/redis"
 	_ "github.com/streamingfast/dauth/ratelimiter/null" // ratelimiter plugin
 	"github.com/streamingfast/dgrpc"
 	"github.com/streamingfast/dipp"

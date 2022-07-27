@@ -22,8 +22,6 @@ import (
 	pbaccounthist "github.com/dfuse-io/dfuse-eosio/pb/dfuse/eosio/accounthist/v1"
 	pbtokenmeta "github.com/dfuse-io/dfuse-eosio/pb/dfuse/eosio/tokenmeta/v1"
 	"github.com/dfuse-io/dfuse-eosio/trxdb"
-	_ "github.com/streamingfast/dauth/authenticator/redis"
-	_ "github.com/streamingfast/dauth/metering/redis"
 	drateLimiter "github.com/streamingfast/dauth/ratelimiter"
 	"github.com/streamingfast/derr"
 	"github.com/streamingfast/dgraphql"
