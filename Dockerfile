@@ -16,7 +16,7 @@ ADD go.mod /work
 RUN apt update && apt-get -y install git
 #grep -w github.com/streamingfast/dlauncher go.mod | sed 's/.*-\([a-f0-9]*$\)/\1/' |head -n 1 > dlauncher.hash &&\
 
-RUN cd /work && git clone https://github.com/nhist/dlauncher.git dlauncher &&\
+RUN cd /work && git clone --branch zsw-dev https://github.com/nhist/dlauncher.git dlauncher &&\
     cd dlauncher &&\
     cd dashboard/client &&\
     yarn install && yarn build
